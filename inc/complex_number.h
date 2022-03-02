@@ -72,7 +72,7 @@ std::ostream &operator<<(std::ostream &output, const ComplexNumber &number);
  *
  * @param input stream
  * @param number complex number
- * @return std::igit stream&
+ * @return std::istream&
  */
 std::istream &operator>>(std::istream &input, ComplexNumber &number);
 
