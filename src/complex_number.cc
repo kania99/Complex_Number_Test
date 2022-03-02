@@ -25,7 +25,7 @@ ComplexNumber operator*(const ComplexNumber &number1, const ComplexNumber &numbe
     ComplexNumber result;
 
     result.real = number1.real * number2.real - number1.imag * number2.imag;
-    result.imag = number1.imag * number2.imag + number1.imag * number2.real;
+    result.imag = number1.real * number2.imag + number1.imag * number2.real;
 
     return result;
 }
