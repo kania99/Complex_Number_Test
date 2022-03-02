@@ -21,9 +21,9 @@ enum Operator
  */
 struct ComplexExpression
 {
-    ComplexNumber firstComponent;
+    ComplexNumber first_component;
     Operator op;
-    ComplexNumber secondCompenent;
+    ComplexNumber second_component;
 };
 
 /**

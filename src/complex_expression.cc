@@ -8,22 +8,22 @@ ComplexNumber Calculate(ComplexExpression expression)
     {
     case Op_Add:
 
-        result = expression.firstComponent + expression.secondCompenent;
+        result = expression.first_component + expression.second_component;
         break;
 
     case Op_Subtract:
 
-        result = expression.firstComponent - expression.secondCompenent;
+        result = expression.first_component - expression.second_component;
         break;
 
     case Op_Multiply:
 
-        result = expression.firstComponent * expression.secondCompenent;
+        result = expression.first_component * expression.second_component;
         break;
 
     case Op_Divide:
 
-        result = expression.firstComponent / expression.secondCompenent;
+        result = expression.first_component / expression.second_component;
         break;
     }
 
@@ -38,7 +38,7 @@ bool CheckAnswer(ComplexExpression expression, ComplexNumber answer)
 
 std::ostream &operator<<(std::ostream &output, const ComplexExpression &expression)
 {
-    output << expression.firstComponent << " ";
+    output << expression.first_component << " ";
 
     switch (expression.op)
     {
@@ -63,7 +63,7 @@ std::ostream &operator<<(std::ostream &output, const ComplexExpression &expressi
         break;
     }
 
-    output << " " << expression.secondCompenent;
+    output << " " << expression.second_component;
     return output;
 }
 
@@ -71,7 +71,7 @@ std::istream &operator>>(std::istream &input, ComplexExpression &expression)
 {
     char sign;
 
-    input >> expression.firstComponent;
+    input >> expression.first_component;
     input >> sign;
 
     switch (sign)
@@ -97,6 +97,6 @@ std::istream &operator>>(std::istream &input, ComplexExpression &expression)
         break;
     }
 
-    input >> expression.secondCompenent;
+    input >> expression.second_component;
     return input;
 }

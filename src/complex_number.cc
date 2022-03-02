@@ -1,41 +1,41 @@
 #include "complex_number.h"
 
-ComplexNumber operator+(const ComplexNumber &number1, const ComplexNumber &number2)
+ComplexNumber operator+(const ComplexNumber &number_1, const ComplexNumber &number_2)
 {
     ComplexNumber result;
 
-    result.real = number1.real + number2.real;
-    result.imag = number1.imag + number2.imag;
+    result.real = number_1.real + number_2.real;
+    result.imag = number_1.imag + number_2.imag;
 
     return result;
 }
 
-ComplexNumber operator-(const ComplexNumber &number1, const ComplexNumber &number2)
+ComplexNumber operator-(const ComplexNumber &number_1, const ComplexNumber &number_2)
 {
     ComplexNumber result;
 
-    result.real = number1.real - number2.real;
-    result.imag = number1.imag - number2.imag;
+    result.real = number_1.real - number_2.real;
+    result.imag = number_1.imag - number_2.imag;
 
     return result;
 }
 
-ComplexNumber operator*(const ComplexNumber &number1, const ComplexNumber &number2)
+ComplexNumber operator*(const ComplexNumber &number_1, const ComplexNumber &number_2)
 {
     ComplexNumber result;
 
-    result.real = number1.real * number2.real - number1.imag * number2.imag;
-    result.imag = number1.real * number2.imag + number1.imag * number2.real;
+    result.real = number_1.real * number_2.real - number_1.imag * number_2.imag;
+    result.imag = number_1.real * number_2.imag + number_1.imag * number_2.real;
 
     return result;
 }
 
-ComplexNumber operator/(const ComplexNumber &number1, const ComplexNumber &number2)
+ComplexNumber operator/(const ComplexNumber &number_1, const ComplexNumber &number_2)
 {
     ComplexNumber result;
 
-    result.real = (number1.real * number2.real + number1.imag * number2.imag) / pow(Modulus(number2), 2);
-    result.imag = (number1.imag * number2.real - number1.real * number2.imag) / pow(Modulus(number2), 2);
+    result.real = (number_1.real * number_2.real + number_1.imag * number_2.imag) / pow(Modulus(number_2), 2);
+    result.imag = (number_1.imag * number_2.real - number_1.real * number_2.imag) / pow(Modulus(number_2), 2);
 
     return result;
 }

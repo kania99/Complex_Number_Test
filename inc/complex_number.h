@@ -17,38 +17,38 @@ struct ComplexNumber
 /**
  * @brief Add two complex numbers
  *
- * @param number1 first complex number
- * @param number2 second complex number
+ * @param number_1 first complex number
+ * @param number_2 second complex number
  * @return ComplexNumber result
  */
-ComplexNumber operator+(const ComplexNumber &number1, const ComplexNumber &number2);
+ComplexNumber operator+(const ComplexNumber &number_1, const ComplexNumber &number_2);
 
 /**
  * @brief Subtract two complex numbers
  *
- * @param number1 first complex number
- * @param number2 second complex number
+ * @param number_1 first complex number
+ * @param number_2 second complex number
  * @return ComplexNumber result
  */
-ComplexNumber operator-(const ComplexNumber &number1, const ComplexNumber &number2);
+ComplexNumber operator-(const ComplexNumber &number_1, const ComplexNumber &number_2);
 
 /**
  * @brief Multiply two complex numbers
  *
- * @param number1 first complex number
- * @param number2 second complex number
+ * @param number_1 first complex number
+ * @param number_2 second complex number
  * @return ComplexNumber result
  */
-ComplexNumber operator*(const ComplexNumber &number1, const ComplexNumber &number2);
+ComplexNumber operator*(const ComplexNumber &number_1, const ComplexNumber &number_2);
 
 /**
  * @brief Divide two complex numbers
  *
- * @param number1 first complex number
- * @param number2 second complex number
+ * @param number_1 first complex number
+ * @param number_2 second complex number
  * @return ComplexNumber result
  */
-ComplexNumber operator/(const ComplexNumber &number1, const ComplexNumber &number2);
+ComplexNumber operator/(const ComplexNumber &number_1, const ComplexNumber &number_2);
 
 /**
  * @brief Calculate modulus of complex number
