@@ -4,7 +4,7 @@
 #include "complex_number.h"
 
 /**
- * @brief Model a set of arithmetic operators.
+ * @brief Model a set of arithmetic operators
  *
  */
 enum Operator
@@ -16,7 +16,7 @@ enum Operator
 };
 
 /**
- * @brief Model the concept of complex expression.
+ * @brief Model the concept of complex expression
  *
  */
 struct ComplexExpression
@@ -27,7 +27,7 @@ struct ComplexExpression
 };
 
 /**
- * @brief Calculate a result of complex expression.
+ * @brief Calculate a result of complex expression
  *
  * @param expression
  * @return ComplexNumber result of caluclation
@@ -35,13 +35,31 @@ struct ComplexExpression
 ComplexNumber Calculate(ComplexExpression expression);
 
 /**
- * @brief Check users's answer to two decimal places.
+ * @brief
  *
  * @param expression
- * @param answer
- * @return true correct answer
- * @return false incorrect answer
+ * @param number
+ * @return true
+ * @return false
  */
-bool CheckAnswer(ComplexExpression expression, ComplexNumber answer);
+bool CheckAnswer(ComplexExpression expression, ComplexNumber number);
+
+/**
+ * @brief Display complex expression
+ *
+ * @param output
+ * @param expression
+ * @return std::ostream&
+ */
+std::ostream &operator<<(std::ostream &output, const ComplexExpression &expression);
+
+/**
+ * @brief Allow to input complex expression
+ * 
+ * @param input 
+ * @param expression 
+ * @return std::istream& 
+ */
+std::istream &operator>>(std::istream &input, ComplexExpression &expression);
 
 #endif // COMPLEX_EXPRESSION_H
