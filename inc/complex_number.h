@@ -60,19 +60,19 @@ double Modulus(const ComplexNumber &number);
 
 /**
  * @brief Display complex number
- * 
+ *
  * @param output stream
  * @param number complex number
- * @return std::ostream& 
+ * @return std::ostream&
  */
 std::ostream &operator<<(std::ostream &output, const ComplexNumber &number);
 
 /**
  * @brief Allow to input complex number
- * 
+ *
  * @param input stream
  * @param number complex number
- * @return std::ostream& 
+ * @return std::igit stream&
  */
 std::istream &operator>>(std::istream &input, ComplexNumber &number);
 
