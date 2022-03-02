@@ -29,3 +29,9 @@ ComplexNumber Calculate(ComplexExpression expression)
 
     return result;
 }
+
+bool CheckAnswer(ComplexExpression expression, ComplexNumber answer)
+{
+    ComplexNumber correct = Calculate(expression);
+    return ((std::abs(correct.real - answer.real) < 0.01) && (std::abs(correct.imag - answer.imag) < 0.01));
+}

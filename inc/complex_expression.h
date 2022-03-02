@@ -4,8 +4,8 @@
 #include "complex_number.h"
 
 /**
- * @brief Model a set of arithmetic operators. 
- * 
+ * @brief Model a set of arithmetic operators.
+ *
  */
 enum Operator
 {
@@ -16,8 +16,8 @@ enum Operator
 };
 
 /**
- * @brief Model the concept of complex expression. 
- * 
+ * @brief Model the concept of complex expression.
+ *
  */
 struct ComplexExpression
 {
@@ -28,11 +28,20 @@ struct ComplexExpression
 
 /**
  * @brief Calculate a result of complex expression.
- * 
- * @param expression 
+ *
+ * @param expression
  * @return ComplexNumber result of caluclation
  */
 ComplexNumber Calculate(ComplexExpression expression);
 
+/**
+ * @brief Check users's answer to two decimal places.
+ *
+ * @param expression
+ * @param answer
+ * @return true correct answer
+ * @return false incorrect answer
+ */
+bool CheckAnswer(ComplexExpression expression, ComplexNumber answer);
 
 #endif // COMPLEX_EXPRESSION_H
