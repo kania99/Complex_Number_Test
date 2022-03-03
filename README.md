@@ -1,6 +1,6 @@
 # Complex Number Test
 
-Complex Number Test is a project I realized in the second semester of my studies within the Object Oriented Programming course at the Wroclaw University of Technology in the field of Control Engineering and Robotics. The main goal of this task was to model the concept of a complex number, and then the test itself, which will test the user's skills in solving operations consisting of complex numbers. The task was an introduction to issues related to object oriented programming.
+Complex Number Test is a project I realized in the second semester of my studies within the Object Oriented Programming course at the Wroclaw University of Technology in the field of Control Engineering and Robotics. The main goal of this task was to model the concept of a complex number, and then the test itself, which will test the user's skills in solving operations consisting of complex numbers. The task was an introduction to issues related to object-oriented programming.
 
 ## Table of Contents
 - [Features](#features)
