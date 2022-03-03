@@ -47,8 +47,7 @@ int main(int argc, char **argv)
 
     while (GetNextQuestion(&test_data_base, &test_question)) // Main loop
     {
-        std::cout << "[" << test_data_base.question_index << "/" << test_data_base.number_of_questions << "]" << std::endl
-                  << std::endl;
+        std::cout << "[" << test_data_base.question_index << "/" << test_data_base.number_of_questions << "]" << std::endl << std::endl;
         std::cout << ":? Provide the results of the operation: ";
         std::cout << test_question << " =" << std::endl;
         std::cout << "   Answer: ";
