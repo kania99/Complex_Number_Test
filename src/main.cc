@@ -76,7 +76,7 @@ int main(int argc, char **argv)
         {
             if (CheckAnswer(test_question, user_answer))
             {
-                std::cout << ":) Corret answer." << std::endl << std::endl;
+                std::cout << ":) Correct answer." << std::endl << std::endl;
                 statistics.correct_answers++;
             }
             else
