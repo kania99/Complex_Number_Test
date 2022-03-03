@@ -1,4 +1,4 @@
-#include <test_data_base.h>
+#include "test_data_base.h"
 
 // Array with easy questions
 static ComplexExpression easy_test[] =
@@ -38,8 +38,7 @@ bool InitializeTest(TestDataBase *test_data_base, const char *test_name)
         SetTest(test_data_base, hard_test, sizeof(hard_test) / sizeof(ComplexExpression));
         return true;
     }
-
-    std::cerr << "Opening test failed" << std::endl;
+    
     return false;
 }
 

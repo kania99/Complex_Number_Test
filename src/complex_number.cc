@@ -53,6 +53,53 @@ std::ostream &operator<<(std::ostream &output, const ComplexNumber &number)
 
 std::istream &operator>>(std::istream &input, ComplexNumber &number)
 {
-    input >> number.real >> number.imag;
+    char tmp;
+
+    input >> tmp; // Read '('
+
+    if (tmp != '(') // Check for '('
+    {
+        input.setstate(std::ios::failbit);
+        return input;
+    }
+    else
+    {
+        input >> number.real;
+        input >> tmp; // Read sign
+
+        if ((tmp != '+') && (tmp != '-')) // Check sign
+        {
+            input.setstate(std::ios::failbit);
+            return input;
+        }
+        else
+        {
+            input >> number.imag;
+
+            if (tmp == '-')
+            {
+                number.imag = -(number.imag);
+            }
+
+            input >> tmp; // Read 'i' symbol
+
+            if (tmp != 'i') // Check for 'i'
+            {
+                input.setstate(std::ios::failbit);
+                return input;
+            }
+            else
+            {
+                input >> tmp; // Read ')'
+
+                if (tmp != ')') // Check for ')'
+                {
+                    input.setstate(std::ios::failbit);
+                    return input;
+                }
+            }
+        }
+    }
+
     return input;
 }
