@@ -1,4 +1,4 @@
-#include "statistics.h"
+#include "statistics.hh"
 
 void DisplayTestResults(Statistics statistics)
 {

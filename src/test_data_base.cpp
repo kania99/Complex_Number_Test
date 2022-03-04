@@ -1,4 +1,4 @@
-#include "test_data_base.h"
+#include "test_data_base.hh"
 
 // Array with easy questions
 static ComplexExpression easy_test[] =

@@ -1,4 +1,4 @@
-#include "complex_number.h"
+#include "complex_number.hh"
 
 ComplexNumber operator+(const ComplexNumber &number_1, const ComplexNumber &number_2)
 {

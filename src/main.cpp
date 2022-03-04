@@ -1,7 +1,7 @@
 #include <ios>
 #include <limits>
-#include "test_data_base.h"
-#include "statistics.h"
+#include "test_data_base.hh"
+#include "statistics.hh"
 
 int main(int argc, char **argv)
 {

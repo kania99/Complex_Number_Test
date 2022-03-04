@@ -1,7 +1,7 @@
-#ifndef COMPLEX_EXPRESSION_H
-#define COMPLEX_EXPRESSION_H
+#ifndef COMPLEX_EXPRESSION_HH
+#define COMPLEX_EXPRESSION_HH
 
-#include "complex_number.h"
+#include "complex_number.hh"
 
 /**
  * @brief Model a set of arithmetic operators
@@ -62,4 +62,4 @@ std::ostream &operator<<(std::ostream &output, const ComplexExpression &expressi
  */
 std::istream &operator>>(std::istream &input, ComplexExpression &expression);
 
-#endif // COMPLEX_EXPRESSION_H
+#endif // COMPLEX_EXPRESSION_HH

@@ -1,5 +1,5 @@
-#ifndef COMPLEX_NUMBER_H_
-#define COMPLEX_NUMBER_H_
+#ifndef COMPLEX_NUMBER_HH
+#define COMPLEX_NUMBER_HH
 
 #include <iostream>
 #include <cmath>
@@ -76,4 +76,4 @@ std::ostream &operator<<(std::ostream &output, const ComplexNumber &number);
  */
 std::istream &operator>>(std::istream &input, ComplexNumber &number);
 
-#endif // COMPLEX_NUMBER_H_
+#endif // COMPLEX_NUMBER_HH

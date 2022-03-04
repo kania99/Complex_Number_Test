@@ -1,5 +1,5 @@
-#ifndef STATISTICS_H_
-#define STATISTICS_H_
+#ifndef STATISTICS_HH
+#define STATISTICS_HH
 
 #include <iostream>
 
@@ -16,4 +16,4 @@ struct Statistics
  */
 void DisplayTestResults(Statistics statistics);
 
-#endif // STATISTICS_H_
+#endif // STATISTICS_HH

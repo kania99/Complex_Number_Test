@@ -1,7 +1,7 @@
-#ifndef TEST_DATA_BASE_H
-#define TEST_DATA_BASE_H
+#ifndef TEST_DATA_BASE_HH
+#define TEST_DATA_BASE_HH
 
-#include "complex_expression.h"
+#include "complex_expression.hh"
 #include <string.h>
 
 struct TestDataBase
@@ -40,4 +40,4 @@ bool InitializeTest(TestDataBase *test_data_base, const char *test_name);
  */
 bool GetNextQuestion(TestDataBase *test_data_base, ComplexExpression *expression);
 
-#endif // TEST_DATA_BASE_H
+#endif // TEST_DATA_BASE_HH
