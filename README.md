@@ -25,7 +25,7 @@ Prerequisites:
 
 Clone repository:
 
-    git clone https://github.com/kania99/Complex_Number_Test.git
+    git clone https://github.com/maciejkaniewski/Complex_Number_Test.git
 
 Create `build` directory and launch `CMake`:
 
